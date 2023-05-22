@@ -4,6 +4,10 @@
 #include <QDebug>
 #include <QTime>
 #include <QMediaPlaylist>
+#include <string>
+#include <queue>
+#include <set>
+#include <vector>
 
 mainWidget::mainWidget(QWidget *parent)
     : QWidget(parent)
@@ -49,6 +53,8 @@ mainWidget::mainWidget(QWidget *parent)
             this->blks[i][j]->move(50+100*j+j, 50+100*i+i);
         }
     }
+
+    this->next_x = this->next_y = 3;
 
     // 切换图片按钮
     QPushButton* shiftImage = new QPushButton(this);
@@ -185,6 +191,7 @@ mainWidget::mainWidget(QWidget *parent)
     });
 
 
+
 }
 
 mainWidget::~mainWidget()
@@ -247,4 +254,6 @@ void mainWidget::shuffle(int n) {
         this->swapMove(x, y);
     }
 }
+
+
 

@@ -35,6 +35,7 @@ private:
     int pnum;
     // 4*4的块
     Block* blks[4][4];
+    int next_x, next_y;
     // 游戏完成提示框
     QMessageBox* mess;
 };

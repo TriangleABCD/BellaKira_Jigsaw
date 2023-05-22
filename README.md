@@ -1,5 +1,7 @@
 # BellaKira Jigsaw
 
+https://github.com/TriangleABCD/BellaKira_Jigsaw/
+
 ## 游玩教程
 
 - 从`release`下载程序压缩包
